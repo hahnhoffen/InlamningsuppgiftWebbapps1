@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/painter.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar nav ul li button {
+  display: block;
+  width: 10%;
+  padding: 10px;
+  background-color: #4dcedf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  margin-left: 88%;
+  margin-bottom: 8px;
+}
+
+#cartButton, #removeCartButton {
+  padding: 10px 20px;
+  background-color: #4dcedf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+.featured-colors, .diy-projects {
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  margin-top: 20px;
+}
+
+.color-cart-item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.newsletter-signup input, .newsletter-signup button, .social-media a, .quick-links a {
+  padding: 10px;
+  margin-top: 5px;
+  color: white;
+  text-decoration: none;
+}
