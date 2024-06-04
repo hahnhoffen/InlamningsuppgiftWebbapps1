@@ -1,84 +1,198 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('/painter.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
+  position: relative;
+  height: 50vh;
+  background: url('/painter.jpg') no-repeat center center/cover;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  justify-content: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header .hero {
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
-}
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
+  font-size: 3em;
 }
 
-.sidebar nav ul li button {
-  display: block;
-  width: 10%;
-  padding: 10px;
-  background-color: #4dcedf;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  color: white;
-  margin-left: 88%;
-  margin-bottom: 8px;
-}
-
-#cartButton, #removeCartButton {
+header button {
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: #4dcedf;
-  color: white;
   border: none;
   border-radius: 5px;
+  color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #3bb3bf;
 }
 
 main {
+  background-color: lightblue;
+  flex: 1;
   padding: 20px;
 }
 
-.featured-colors, .diy-projects {
+.featured-colors {
   margin-bottom: 20px;
+}
+
+.featured-colors h2 {
+  color: #fff;
+}
+
+.featured-colors .color-palette {
+  display: flex;
+  gap: 10px;
+}
+
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.diy-projects {
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+.diy-projects h2 {
+  color: #fff;
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
 }
 
 .cart-items {
   margin-top: 20px;
+  background-color: transparent;
+}
+
+.cart-items h2 {
+  color: #fff; 
+}
+
+.color-cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .color-cart-item {
   width: 50px;
   height: 50px;
-  margin: 5px;
   border-radius: 50%;
-  display: inline-block;
+}
+
+aside.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  background-color: transparent;
+  color: #fff;
+  padding: 20px;
+}
+
+aside.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+aside.sidebar nav ul li {
+  margin-bottom: 10px;
+}
+
+aside.sidebar nav ul li button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4dcedf;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+aside.sidebar nav ul li button:hover {
+  background-color: #3bb3bf;
 }
 
 footer {
   background-color: #333;
-  color: white;
+  color: #fff;
   text-align: center;
   padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
-.newsletter-signup input, .newsletter-signup button, .social-media a, .quick-links a {
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.newsletter-signup input {
   padding: 10px;
-  margin-top: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.newsletter-signup button {
+  padding: 10px;
+  background-color: #4dcedf;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-signup button:hover {
+  background-color: #3bb3bf;
+}
+
+.social-media a, .quick-links a {
+  padding: 10px;
+  margin: 5px;
   color: white;
   text-decoration: none;
+}
+
+.quick-links {
+  display: flex;
+  gap: 10px;
 }

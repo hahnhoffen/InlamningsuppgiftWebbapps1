@@ -5,34 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Menu</title>
   <link rel="stylesheet" href="styles/menu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <header>
-      <h2>PICK YOU COLOR</h2>
-    </header>
+    <header>PICK YOUR COLOR</header>
     <main>
-      <h2>Click on the color you want to save</h2>
-      <div class="color-options">
-        <button class="color-option" style="background-color: red;"></button>
-        <button class="color-option" style="background-color: green;"></button>
-        <button class="color-option" style="background-color: blue;"></button>
-        <button class="color-option" style="background-color: yellow;"></button>
-        <button class="color-option" style="background-color: orange;"></button>
-        <button class="color-option" style="background-color: purple;"></button>
-        <button class="color-option" style="background-color: pink;"></button>
-        <button class="color-option" style="background-color: cyan;"></button>
-        <button class="color-option" style="background-color: magenta;"></button>
-        <button class="color-option" style="background-color: brown;"></button>
+      <div class="content">
+        <div class="instructions">Click on the color you want to save...</div>
+        <div class="color-options">
+          <button class="color-option" style="background-color: red;" data-color-name="Red"></button>
+          <button class="color-option" style="background-color: green;" data-color-name="Green"></button>
+          <button class="color-option" style="background-color: blue;" data-color-name="Blue"></button>
+          <button class="color-option" style="background-color: yellow;" data-color-name="Yellow"></button>
+          <button class="color-option" style="background-color: orange;" data-color-name="Orange"></button>
+          <button class="color-option" style="background-color: purple;" data-color-name="Purple"></button>
+          <button class="color-option" style="background-color: pink;" data-color-name="Pink"></button>
+          <button class="color-option" style="background-color: cyan;" data-color-name="Cyan"></button>
+          <button class="color-option" style="background-color: magenta;" data-color-name="Magenta"></button>
+          <button class="color-option" style="background-color: brown;" data-color-name="Brown"></button>
+        </div>
       </div>
     </main>
     <aside>
-      <h2>such a good colorstore</h2>
+      <h2>Such a good color store</h2>
     </aside>
-    <footer>
-      <button id="backButton">Back to Main Page</button>
-    </footer>
+    <footer id="backButton">Back to Main Page</footer>
   </div>
   <script src="/javascript/menu.js"></script>
 </body>
 </html>
+
